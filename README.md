@@ -4,7 +4,7 @@
 
 <img src="fig1.svg" alt="fig1"/>
 
-Fig. 1. Different loss functions exhibit varying levels of spatial sensitivity to misclassified vascular pixels. Compared with conventional loss functions, the proposed VE loss demonstrates higher sensitivity to the spatial distribution of misclassified pixels, thereby better preserving vascular topological continuity and improving A/V discrimination. Here, NDR denotes the normalized difference, and Pred1 (Pred2) represents segmentation results with the same number of mis-segmented pixels but at different spatial locations.
+Fig. 1. Comparison of the sensitivity of different loss functions to misclassified vascular pixels in terms of spatial distribution and topological structure. Compared with existing loss functions, the proposed VE loss shows higher sensitivity to the spatial distribution of misclassified pixels and the topological consistency of vascular structures. Here, NDR  denotes the normalized difference, and Pred1 and Pred2 represent segmentation results with the same number of misclassified pixels but located at different spatial positions, while Pred1 and Pred3 represent segmentation results with topological structure errors.
 
 ### 2. Methods
 
@@ -15,6 +15,7 @@ Fig. 2. Overview of Our Method. (a) Overall architecture of IGAVNet. The skip co
  <img src="fig3.svg" alt="fig3"/>
 
 Fig. 3. VE Loss Structure Diagram. The vector encoding includes pixel distance weighting and class one-hot encoding. It calculates the cosine similarity between the predicted results and the labels, enhancing the model's sensitivity to error locations and thereby improving the accuracy of the model's segmentation of fine vessels.
+
 
 
 
